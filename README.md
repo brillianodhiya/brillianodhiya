@@ -22,7 +22,7 @@
 [![](https://visitcount.itsvg.in/api?id=brillianodhiya&icon=0&color=1)](https://visitcount.itsvg.in)
 
   ## 💰 You can help me by Donating
-  [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/dhiyaulhaq) [![Saweria](https://img.shields.io/badge/-Saweria-orange)](https://saweria.co/liarchie) 
+  [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/dhiyaulhaq) [![Saweria](https://img.shields.io/badge/-Saweria-orange?style=for-the-badge)](https://saweria.co/liarchie) [![Trakteer](https://img.shields.io/badge/-Trakteer-red?style=for-the-badge)](https://trakteer.id/liarchie)
 
   
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
