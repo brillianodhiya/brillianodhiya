@@ -21,7 +21,7 @@ jobs:
       - name: generate snake.svg
         uses: Platane/snk/svg-only@v2
         with:
-          github_user_name: brillianodhiya  # Ganti dengan username GitHub Anda
+          github_user_name: brillianodhiya  # Ensure this is correct and not empty
           outputs: dist/snake.svg
 
       - name: push snake.svg to the output branch
