@@ -61,23 +61,7 @@
 
 <h2 align="left">Family</h2>
 
-<div style="display:flex; flex-direction: row; flex-wrap: wrap; gap: 12px;">
-  <div style="displa: flex; flex-direction: column; text-align: center;">
-    <h3 style="margin:0;">Marilia Krabbe</h3>
-    <h6 style="margin:0;">💖 Wife</h6>
-    <img width="100" src="./marilia_krabbe.png" />
-  </div>
-  <div style="displa: flex; flex-direction: column; text-align: center;">
-    <h3 style="margin:0;">Talita Titania</h3>
-    <h6 style="margin:0;">First Daughter</h6>
-    <img width="100" src="./talita.jpg" />
-  </div>
-    <div style="displa: flex; flex-direction: column; text-align: center;">
-    <h3 style="margin:0;">Kanrishaurus</h3>
-    <h6 style="margin:0;">Me</h6>
-    <img width="100" src="./kanrishaurus.png" />
-  </div>
-</div>
+<img src="./Screenshot 2025-03-07 153225.png" />
 
 ###
 
