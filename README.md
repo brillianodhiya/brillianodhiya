@@ -11,29 +11,31 @@
 
 <br clear="both">
 
-<img align="right" height="150" src="https://media1.giphy.com/media/wiFxDY1R6cKje/giphy.gif?cid=ecf05e47udx9evg3cer86p3b4zrfzcld20x2eebenh19387l&ep=v1_gifs_related&rid=giphy.gif&ct=g"  />
+<img align="right" height="150" src="./clipfly-ai-20240506141739-ezgif.com-crop.gif"  />
 
 ###
 
 <div align="left">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" width="42" alt="javascript logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" height="30" width="42" alt="typescript logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" width="42" alt="react logo"  />
+  <img style="margin-bottom: -12px; margin-left: -12px; margin-right: -12px;" src="https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/TypeScript.png?raw=true" height="50" alt="typescript logo"  />
+  <img style="margin-bottom: -12px; margin-left: -5px; margin-right: -8px;" src="https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/Node.js.png?raw=true" height="45" alt="nodejs logo"  />
+  <img src="https://react.dev/_next/image?url=%2Fimages%2Fuwu.png&w=384&q=75" height="30" alt="react logo"  />
+  <img src="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1714730590%2Ffront%2Fnextjs%2Fuwu%2Fnext-uwu-logo.png&w=640&q=75" height="30" alt="nextjs logo"  />
+  <img style="margin-bottom: -12px; margin-left: -2px; margin-right: -2px;" src="https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/tailwind%20css/Tailwindcss.png?raw=true" height="50" alt="tailwind logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" width="42" alt="html5 logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" width="42" alt="css3 logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/denojs/denojs-original.svg" height="30" width="42" alt="denojs logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" height="30" width="42" alt="figma logo"  />
+  <img style="margin-bottom: -12px; margin-left: -2px; margin-right: -2px;" src="https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/Figma.png?raw=true" height="45" alt="figma logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" width="42" alt="nodejs logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="30" width="42" alt="vscode logo"  />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" height="30" width="42" alt="nextjs logo"  />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" height="30" width="42" alt="canva logo"  />
 </div>
 
 ###
 
 <div align="left">
-  <a href="https://www.youtube.com/@kanrisha_b" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Kanrisha B&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="youtube logo"  />
+  <a href="https://www.youtube.com/@kanrishaurus" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Kanrishaurus&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="youtube logo"  />
   </a>
   <a href="https://www.instagram.com/brilliano_d/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
@@ -53,6 +55,28 @@
   <a href="https://linktr.ee/brillidhiya" target="_blank">
     <img src="https://img.shields.io/static/v1?message=Linktree&logo=linktree&label=&color=1de9b6&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linktree logo"  />
   </a>
+</div>
+
+###
+
+<h2 align="left">Family</h2>
+
+<div style="display:flex; flex-direction: row; flex-wrap: wrap; gap: 12px;">
+  <div style="displa: flex; flex-direction: column; text-align: center;">
+    <h3 style="margin:0;">Marilia Krabbe</h3>
+    <h6 style="margin:0;">💖 Wife</h6>
+    <img width="100" src="./marilia_krabbe.png" />
+  </div>
+  <div style="displa: flex; flex-direction: column; text-align: center;">
+    <h3 style="margin:0;">Talita Titania</h3>
+    <h6 style="margin:0;">First Daughter</h6>
+    <img width="100" src="./talita.jpg" />
+  </div>
+    <div style="displa: flex; flex-direction: column; text-align: center;">
+    <h3 style="margin:0;">Kanrishaurus</h3>
+    <h6 style="margin:0;">Me</h6>
+    <img width="100" src="./kanrishaurus.png" />
+  </div>
 </div>
 
 ###
