@@ -18,9 +18,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Debugging - Print GitHub User Name
-        run: echo "GitHub User Name: brillianodhiya"
-
       - name: generate snake.svg
         uses: Platane/snk/svg-only@latest  # Menggunakan versi terbaru
         with:
