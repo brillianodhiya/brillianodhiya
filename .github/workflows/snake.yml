@@ -18,10 +18,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Debugging - Print GitHub User Name
+        run: echo "GitHub User Name: brillianodhiya"
+
       - name: generate snake.svg
-        uses: Platane/snk/svg-only@v2
+        uses: Platane/snk/svg-only@latest  # Menggunakan versi terbaru
         with:
-          github_user_name: brillianodhiya  # Ensure this is correct and not empty
+          github_user_name: brillianodhiya  # Ganti dengan username GitHub Anda
           outputs: dist/snake.svg
 
       - name: push snake.svg to the output branch
