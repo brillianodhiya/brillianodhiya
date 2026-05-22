@@ -1,7 +1,7 @@
 <div align="center">
 
-# 🎮 Brilliano Dhiya Ulhaq (Brilli)
-### Senior Frontend Developer & Technical Project Lead
+# 🎮 Brilliano Dhiya Ulhaq (Kanrishaurus)
+### Technical Project Lead & Senior Frontend Developer
 
 <img src="https://raw.githubusercontent.com/brillianodhiya/Brilliano-8bit-Portofolio/main/attached_assets/banner.png" width="100%" alt="Retro Gaming Banner" style="border-radius: 8px; border: 4px solid #fff; box-shadow: 4px 4px 0px 0px #000;" />
 
@@ -12,56 +12,45 @@
 | [🎮 CHARACTER STATUS]                                     |
 |                                                           |
 |  NAME: Brilliano Dhiya Ulhaq (Brilli)                     |
-|  CLASS: Senior Frontend Developer & Technical Lead        |
-|  LEVEL: Lvl 6+ (Years of Exp)                             |
-|  HP:    [██████████████████████████████] 99/99            |
-|  MP:    [████████████████████████████░] 95/95             |
+|  CLASS: Frontend Developer                           |
+|  LEVEL: Lvl 25                                            |
+|  EXP:   [████████████████████████░░░░░░] 74%              |
 |                                                           |
-|  ATK (Core Weapons): Next.js, React, TypeScript           |
-|  DEF (Security): Row Level Security (RLS), Keycloak SSO   |
-|  SPD (Performance): Core Web Vitals (-74% load time)      |
-|  AGI (SEO Growth): +45% Organic Traffic Increase          |
+|  AGI (Frontend Speed): 90 / 100                           |
+|  STR (Fullstack Power): 89 / 100                          |
+|  INT (Data Analysis):  78 / 100                           |
+|  VIT (Security, SEO):  92 / 100                           |
+|                                                           |
+|  RANK: Elite Radiance (1,315+ Contributions Collected)     |
+|  REGION: Earth 📍 Cikarang, Indonesia (GMT+7)             |
 |___________________________________________________________|
 ```
 
 <br>
 
 <p align="center">
-  <a href="https://brillidhiya.vercel.app/"><img src="https://img.shields.io/badge/🎮%20Visit%20Interactive%20Portfolio-Play%20Now-cyan?style=for-the-badge&logo=retroarch&logoColor=white" height="40" /></a>
+  <a href="https://brilli.is-a.dev/"><img src="https://img.shields.io/badge/🎮%20Visit%20Interactive%20Portfolio-Play%20Now-cyan?style=for-the-badge&logo=retroarch&logoColor=white" height="40" /></a>
 </p>
 
 </div>
 
 ---
 
-## 🌟 Professional Quest Log (Experience)
+## 🔮 Active Quest: Project NiatKawin
 
-### ⚔️ Active Quest: IT Project Manager & Freelance Tech Lead
-**Kyoto, Japan (Remote) | 80&Company** | *Nov 2025 – Feb 2026*
-- Led full-stack development of AI-powered SNS platform with **Supabase & Row Level Security (RLS)** for enterprise-grade protection.
-- Designed secure authentication system supporting OAuth 2.0 (Google, Facebook) and custom email flows.
-- Translated CEO and executive team product vision into technical roadmaps, delivering 3 major feature releases on schedule.
-- Engineered and tested AI bot personas using prompt engineering to maintain consistent conversation quality.
+<div align="center">
+  <img src="./horizontal_logo.png" width="450" alt="NiatKawin Logo" style="border-radius: 8px; border: 3px solid #fff; box-shadow: 4px 4px 0px 0px #000;" />
+  
+  <br><br>
+  
+  **Status:** 🚀 In Production & Active Development  
+  **Platform:** Android (Google Play Store)  
+  **Class:** Premium Wedding Templates & Invitation Simulator
+  
+  <br>
 
-### 🛡️ Completed Quest: Senior Frontend Developer
-**Tangerang, Indonesia | PT. IoT Kreasi Indonesia** | *Jan 2021 – Present*
-- Standardized Next.js & React stack across the IoT division (adopted by 6 developers).
-- Architected flagship IoT monitoring platform managing **10,000+ active connected devices** with real-time dashboards and automated logging.
-- Built enterprise ticketing and automated billing modules, digitizing complete service lifecycles.
-- Raised organic traffic by **45%** by building automated RSS feeds, robots.txt, and sitemap.js generation.
-- Reduced average page load time from **4.2s to 1.1s** (-74%) via ISR and modern image formats (AVIF/WebP).
-- Integrated **Keycloak SSO** with microservices architecture for unified authentication.
-
-### 🔮 Completed Quest: Frontend Developer (Freelance)
-**Kyoto, Japan (Remote) | 80&Company** | *Jul 2024 – Jul 2025*
-- Developed job search platform using Next.js and TypeScript, implementing secure and seamless user authentication flows.
-- Optimized high-traffic Shopify e-commerce templates for **KOSE MUWMAZE**, raising Core Web Vitals by **35%**.
-
-### ⚡ Completed Quest: Technical Lead & Frontend Developer (Freelance)
-**Jakarta, Indonesia (Remote) | Kisah Kreatif** | *Feb 2023 – Mar 2024*
-- Delivered logistics website for **PT. Pupuk Indonesia Logistik**, handling 500+ daily shipment tracking requests.
-- Architected a secure Learning Management System (LMS) with forced fullscreen anti-cheating, stopping 99% of exam violations.
-- Led 3-person development team through full project lifecycle from requirements gathering to production.
+  <a href="https://play.google.com/store/apps/details?id=com.titanialabs.niatkawin" target="_blank"><img src="https://img.shields.io/badge/Google%20Play-Play%20Store-3DDC84?style=for-the-badge&logo=google-play&logoColor=white" height="40" /></a>
+</div>
 
 ---
 
@@ -73,49 +62,78 @@ I built an interactive retro arcade cabinet directly into my website! You can pl
 
 | Game | Vibe / Mechanics | Play link |
 | :--- | :--- | :--- |
-| 🧱 **Tetris** | Classic block-falling and line-clearing puzzle. | [**Play Now 🎮**](https://brillidhiya.vercel.app/) |
-| 🐍 **Snake** | Nostalgic retro snake game with adjustable speeds. | [**Play Now 🎮**](https://brillidhiya.vercel.app/) |
-| 🧩 **Sudoku** | Grid-based puzzle with adjustable difficulties. | [**Play Now 🎮**](https://brillidhiya.vercel.app/) |
-| 🫧 **Bubble Blast** | Aiming and matching bubble launcher. | [**Play Now 🎮**](https://brillidhiya.vercel.app/) |
-| 🍬 **Candy Match** | Standard Match-3 tile swapping and score tracker. | [**Play Now 🎮**](https://brillidhiya.vercel.app/) |
-| 🚀 **Arcade Shooter** | Fast-paced retro space invader firing game. | [**Play Now 🎮**](https://brillidhiya.vercel.app/) |
+| 🧱 **Tetris** | Classic block-falling and line-clearing puzzle. | [**Play Now 🎮**](https://brilli.is-a.dev/arcade/tetris) |
+| 🐍 **Snake** | Nostalgic retro snake game with adjustable speeds. | [**Play Now 🎮**](https://brilli.is-a.dev/arcade/snake) |
+| 🧩 **Sudoku** | Grid-based puzzle with adjustable difficulties. | [**Play Now 🎮**](https://brilli.is-a.dev/arcade/sudoku) |
+| 🫧 **Bubble Blast** | Aiming and matching bubble launcher. | [**Play Now 🎮**](https://brilli.is-a.dev/arcade/bubble) |
+| 🍬 **Candy Match** | Standard Match-3 tile swapping and score tracker. | [**Play Now 🎮**](https://brilli.is-a.dev/arcade/match3) |
+| 🚀 **Arcade Shooter** | Fast-paced retro space invader firing game. | [**Play Now 🎮**](https://brilli.is-a.dev/arcade/shooter) |
 
 </div>
 
 ---
 
-## 🛠️ RPG Skill Tree (Tech Stack)
+## ⚡ Skill Tree (Abilities Unlocked: 58/63)
 
-### 🗡️ Frontend Weapons
-![React](https://img.shields.io/badge/-React-1572B6?style=flat-square&logo=react&logoColor=white)
-![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+### 🛡️ Core Spells & Languages
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/-Framer%20Motion-0055FF?style=flat-square&logo=framer&logoColor=white)
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=openjdk&logoColor=white)
+![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
+![C#](https://img.shields.io/badge/-C%23-239120?style=flat-square&logo=c-sharp&logoColor=white)
+![jQuery](https://img.shields.io/badge/-jQuery-0769AD?style=flat-square&logo=jquery&logoColor=white)
 
-### 🛡️ Backend & Database Armor
+### ⚔️ Frontend Arts
+![React](https://img.shields.io/badge/-React-1572B6?style=flat-square&logo=react&logoColor=white)
+![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/-Tailwind%20CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Redux](https://img.shields.io/badge/-Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
+![Ant Design](https://img.shields.io/badge/-Ant%20Design-0170FE?style=flat-square&logo=ant-design&logoColor=white)
+![Astro](https://img.shields.io/badge/-Astro-BC52EE?style=flat-square&logo=astro&logoColor=white)
+![Svelte](https://img.shields.io/badge/-Svelte-FF3E00?style=flat-square&logo=svelte&logoColor=white)
+![Three.js](https://img.shields.io/badge/-Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white)
+![D3.js](https://img.shields.io/badge/-D3.js-F9A03F?style=flat-square&logo=d3dotjs&logoColor=white)
+![Capacitor](https://img.shields.io/badge/-Capacitor-119EFF?style=flat-square&logo=capacitor&logoColor=white)
+![Sass](https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white)
+![Less](https://img.shields.io/badge/-Less-1D365D?style=flat-square&logo=less&logoColor=white)
+![Flutter](https://img.shields.io/badge/-Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+
+### 🔮 Backend Magic
 ![Supabase](https://img.shields.io/badge/-Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white)
+![Django](https://img.shields.io/badge/-Django-092E20?style=flat-square&logo=django&logoColor=white)
+![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat-square&logo=express&logoColor=white)
 ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/-Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
+![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 ![Keycloak SSO](https://img.shields.io/badge/-Keycloak%20SSO-1B75BC?style=flat-square&logo=keycloak&logoColor=white)
+![LangChain](https://img.shields.io/badge/-LangChain-1C3C3A?style=flat-square&logo=langchain&logoColor=white)
+![Nest.js](https://img.shields.io/badge/-Nest.js-E0234E?style=flat-square&logo=nestjs&logoColor=white)
 
-### 🔮 Magic Spells & Emerging Tech
-![AI Prompt Engineering](https://img.shields.io/badge/-Prompt%20Engineering-FF6F61?style=flat-square&logo=openai&logoColor=white)
-![AI Bot Development](https://img.shields.io/badge/-AI%20Bots-4B0082?style=flat-square&logo=robot&logoColor=white)
-![Grafana Faro](https://img.shields.io/badge/-Grafana%20Faro-F46800?style=flat-square&logo=grafana&logoColor=white)
-
-### 🎒 Utility Inventory
+### 🎒 Tools & Runes
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 ![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Bun](https://img.shields.io/badge/-Bun-000000?style=flat-square&logo=bun&logoColor=white)
 ![NPM](https://img.shields.io/badge/-NPM-CB3837?style=flat-square&logo=npm&logoColor=white)
-![Canva](https://img.shields.io/badge/-Canva-00C4CC?style=flat-square&logo=canva&logoColor=white)
+![Yarn](https://img.shields.io/badge/-Yarn-2C8EBB?style=flat-square&logo=yarn&logoColor=white)
+![Nginx](https://img.shields.io/badge/-Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
+![Cloudflare](https://img.shields.io/badge/-Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)
+![Insomnia](https://img.shields.io/badge/-Insomnia-5849BE?style=flat-square&logo=insomnia&logoColor=white)
+![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat-square&logo=postman&logoColor=white)
+![Swagger](https://img.shields.io/badge/-Swagger-85EA2D?style=flat-square&logo=swagger&logoColor=black)
+![Project Management](https://img.shields.io/badge/-Project%20Management-0052CC?style=flat-square&logo=trello&logoColor=white)
+![Linux](https://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
+![Power BI](https://img.shields.io/badge/-Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![Selenium](https://img.shields.io/badge/-Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/-TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/-PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 
 ---
 
