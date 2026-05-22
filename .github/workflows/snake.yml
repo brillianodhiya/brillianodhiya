@@ -26,7 +26,8 @@ jobs:
       - name: Generate Activity Log SVG
         run: node scripts/generate-activity-svg.mjs
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
 
       - name: generate snake.svg
         uses: Platane/snk/svg-only@v3

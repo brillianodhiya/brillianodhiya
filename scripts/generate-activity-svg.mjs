@@ -1,68 +1,47 @@
 import fs from 'fs';
 import path from 'path';
 
-const username = 'brillianodhiya';
-const token = process.env.GITHUB_TOKEN || process.env.GH_PAT;
+// Supabase Configuration from Environment Variables
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseAnonKey = process.env.SUPABASE_ANON_KEY;
 
-if (!token) {
-  console.error("Error: GITHUB_TOKEN or GH_PAT is required.");
+if (!supabaseUrl || !supabaseAnonKey) {
+  console.error("Error: SUPABASE_URL and SUPABASE_ANON_KEY environment variables are required.");
   process.exit(1);
 }
 
-const query = `
-  query($username: String!) {
-    user(login: $username) {
-      contributionsCollection {
-        contributionCalendar {
-          totalContributions
-          weeks {
-            contributionDays {
-              date
-              contributionCount
-            }
-          }
-        }
-      }
-    }
-  }
-`;
-
 async function run() {
   try {
-    console.log(`Fetching contributions for ${username}...`);
-    const res = await fetch('https://api.github.com/graphql', {
-      method: 'POST',
+    console.log("Fetching combined GitHub & GitLab activity logs from Supabase...");
+    
+    const res = await fetch(`${supabaseUrl}/rest/v1/portfolio_activity_log?select=*&limit=1000`, {
+      method: 'GET',
       headers: {
+        'apikey': supabaseAnonKey,
+        'Authorization': `Bearer ${supabaseAnonKey}`,
         'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
         'User-Agent': 'NodeJS-Activity-SVG-Generator'
-      },
-      body: JSON.stringify({ query, variables: { username } })
+      }
     });
 
     if (!res.ok) {
-      throw new Error(`GitHub API returned status ${res.status}`);
+      throw new Error(`Supabase REST API returned status ${res.status}`);
     }
 
-    const json = await res.json();
-    if (json.errors) {
-      throw new Error(JSON.stringify(json.errors));
-    }
-
-    const calendar = json.data.user.contributionsCollection.contributionCalendar;
-    const totalContributions = calendar.totalContributions;
+    const data = await res.json();
     
-    // Build activity map
+    // Build activity map and total contributions count
+    let totalContributions = 0;
     const activityMap = {};
-    calendar.weeks.forEach(week => {
-      week.contributionDays.forEach(day => {
-        activityMap[day.date] = day.contributionCount;
-      });
+    
+    data.forEach(log => {
+      activityMap[log.date] = log.count;
+      totalContributions += log.count;
     });
 
-    console.log(`Total Contributions: ${totalContributions}`);
+    console.log(`Total Combined Contributions: ${totalContributions}`);
 
-    // Generate grid dates
+    // Generate grid dates (53 weeks)
     const WEEKS = 53;
     const DAYS_PER_WEEK = 7;
     const today = new Date();
@@ -212,7 +191,7 @@ async function run() {
     }
 
     fs.writeFileSync(path.resolve(distDir, 'activity_log.svg'), svg);
-    console.log("Stunning retro Activity Log SVG generated successfully at dist/activity_log.svg!");
+    console.log("Stunning unified (GitHub + GitLab) Activity Log SVG generated successfully at dist/activity_log.svg!");
 
   } catch (err) {
     console.error("Error generating Activity Log SVG:", err);
