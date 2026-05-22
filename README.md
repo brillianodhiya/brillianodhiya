@@ -7,24 +7,10 @@
 
 ---
 
-```text
- ___________________________________________________________
-| [🎮 CHARACTER STATUS]                                     |
-|                                                           |
-|  NAME: Brilliano Dhiya Ulhaq (Brilli)                     |
-|  CLASS: Frontend Developer                           |
-|  LEVEL: Lvl 25                                            |
-|  EXP:   [████████████████████████░░░░░░] 74%              |
-|                                                           |
-|  AGI (Frontend Speed): 90 / 100                           |
-|  STR (Fullstack Power): 89 / 100                          |
-|  INT (Data Analysis):  78 / 100                           |
-|  VIT (Security, SEO):  92 / 100                           |
-|                                                           |
-|  RANK: Elite Radiance (1,315+ Contributions Collected)     |
-|  REGION: Earth 📍 Cikarang, Indonesia (GMT+7)             |
-|___________________________________________________________|
-```
+<a href="https://brilli.is-a.dev/" target="_blank">
+  <img src="https://raw.githubusercontent.com/brillianodhiya/brillianodhiya/output/character_status.svg" alt="RPG Character Status Card" width="100%" />
+</a>
+
 
 <br>
 
