@@ -215,15 +215,15 @@ async function run() {
 
   <!-- Right Footer Statistics -->
   <g transform="translate(0, 5)">
-    <!-- Diamond Rank Indicator -->
-    <polygon class="arcade-blink" points="568,261 573,254 578,261 573,268" fill="#00d4ff" />
-    <text x="586" y="265" class="font-pixel" font-size="11" fill="#00d4ff" letter-spacing="0.5">ELITE RADIANCE</text>
+    <!-- Diamond Rank Indicator (Line 1) -->
+    <polygon class="arcade-blink" points="568,248 573,241 578,248 573,255" fill="#00d4ff" />
+    <text x="586" y="252" class="font-pixel" font-size="11" fill="#00d4ff" letter-spacing="0.5">ELITE RADIANCE</text>
     
-    <!-- Total Contributions -->
-    <text x="850" y="265" class="font-pixel" font-size="11" fill="#ffffff" text-anchor="end" letter-spacing="0.5">
+    <!-- Total Contributions (Line 2) -->
+    <text x="850" y="270" class="font-pixel" font-size="11" fill="#ffffff" text-anchor="end" letter-spacing="0.5">
       <tspan fill="#00d4ff">${totalContributions}</tspan> CONTRIBUTIONS COLLECTED
     </text>
-    <line x1="565" y1="274" x2="850" y2="274" stroke="#39225c" stroke-width="2.5" />
+    <line x1="565" y1="278" x2="850" y2="278" stroke="#39225c" stroke-width="2.5" />
   </g>
 </svg>
 `;
