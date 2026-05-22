@@ -7,6 +7,49 @@
     }
     .scanlines {
       opacity: 0.04;
+      animation: crt-flicker 0.15s infinite;
+    }
+    .xp-bar-fill {
+      animation: xp-pulse 2.5s infinite ease-in-out;
+    }
+    .diamond-sparkle {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: diamond-twinkle 3s infinite ease-in-out;
+    }
+    .cell-interactive {
+      transform-box: fill-box;
+      transform-origin: center;
+      transition: all 0.25s ease-in-out;
+    }
+    .cell-interactive:hover {
+      transform: scale(1.3);
+      filter: brightness(1.4) saturate(1.2);
+      stroke: #00d4ff !important;
+      stroke-width: 2px !important;
+    }
+    .arcade-blink {
+      animation: text-blink 1.2s infinite;
+    }
+
+    @keyframes crt-flicker {
+      0% { opacity: 0.02; }
+      50% { opacity: 0.05; }
+      100% { opacity: 0.02; }
+    }
+    @keyframes xp-pulse {
+      0% { opacity: 0.85; fill: #00a3c4; }
+      50% { opacity: 1; fill: #00d4ff; }
+      100% { opacity: 0.85; fill: #00a3c4; }
+    }
+    @keyframes diamond-twinkle {
+      0% { transform: scale(0.9); opacity: 0.4; fill: #00d4ff; }
+      50% { transform: scale(1.3); opacity: 1; fill: #ffffff; }
+      100% { transform: scale(0.9); opacity: 0.4; fill: #00d4ff; }
+    }
+    @keyframes text-blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0.2; }
     }
   </style>
 
@@ -108,407 +151,407 @@
   <text x="850" y="43" class="font-pixel" font-size="13" fill="#a090b0" text-anchor="end" font-weight="normal">Contributions</text>
 
   <!-- Grid rendering -->
-  <rect x="30" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="30" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="30" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="30" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="30" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="30" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="30" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="45" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="45" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="45" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="45" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="45" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="45" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="45" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="60" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="60" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="65.5,87.5 68.5,90.5 65.5,93.5 62.5,90.5" fill="#00d4ff" />
-<rect x="60" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="60" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="60" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="60" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="60" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="75" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="75" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="75" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="75" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="75" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="75" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="75" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="90" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="90" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="90" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="90" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="90" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="90" y="145" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="95.5,147.5 98.5,150.5 95.5,153.5 92.5,150.5" fill="#00d4ff" />
-<rect x="90" y="160" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="95.5,162.5 98.5,165.5 95.5,168.5 92.5,165.5" fill="#00d4ff" />
-<rect x="105" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="105" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="105" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="105" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="105" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="105" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="105" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="120" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="120" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="120" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="120" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="125.5,117.5 128.5,120.5 125.5,123.5 122.5,120.5" fill="#00d4ff" />
-<rect x="120" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="125.5,132.5 128.5,135.5 125.5,138.5 122.5,135.5" fill="#00d4ff" />
-<rect x="120" y="145" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="125.5,147.5 128.5,150.5 125.5,153.5 122.5,150.5" fill="#00d4ff" />
-<rect x="120" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="135" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="135" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="135" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="135" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="135" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="135" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="135" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="150" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="150" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="150" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="150" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="150" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="150" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="150" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="165" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="165" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="165" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="165" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="165" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="165" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="165" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="180" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="180" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="180" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="180" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="180" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="180" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="180" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="195" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="195" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="195" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="195" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="195" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="195" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="195" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="210" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="210" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="210" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="210" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="210" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="210" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="210" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="225" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="225" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="230.5,87.5 233.5,90.5 230.5,93.5 227.5,90.5" fill="#00d4ff" />
-<rect x="225" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="230.5,102.5 233.5,105.5 230.5,108.5 227.5,105.5" fill="#00d4ff" />
-<rect x="225" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="225" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="225" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="225" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="240" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="240" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="240" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="240" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="240" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="240" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="240" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="255" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="255" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="255" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="255" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="255" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="255" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="255" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="270" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="270" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="270" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="270" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="270" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="270" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="270" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="285" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="285" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="285" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="290.5,102.5 293.5,105.5 290.5,108.5 287.5,105.5" fill="#00d4ff" />
-<rect x="285" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="290.5,117.5 293.5,120.5 290.5,123.5 287.5,120.5" fill="#00d4ff" />
-<rect x="285" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="285" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="285" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="300" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="300" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="300" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="300" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="300" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="300" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="300" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="315" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="315" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="315" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="315" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="315" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="315" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="315" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="330" y="70" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="335.5,72.5 338.5,75.5 335.5,78.5 332.5,75.5" fill="#00d4ff" />
-<rect x="330" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="330" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="330" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="330" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="330" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="330" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="345" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="345" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="345" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="345" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="345" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="345" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="345" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="360" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="360" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="360" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="360" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="360" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="360" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="360" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="375" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="375" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="375" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="375" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="380.5,117.5 383.5,120.5 380.5,123.5 377.5,120.5" fill="#00d4ff" />
-<rect x="375" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="375" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="375" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="390" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="390" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="390" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="390" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="390" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="390" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="390" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="405" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="405" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="405" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="405" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="405" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="405" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="405" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="420" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="420" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="420" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="420" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="420" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="420" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="420" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="435" y="70" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="435" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="435" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="435" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="435" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="435" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="435" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="450" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="450" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="450" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="450" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="455.5,117.5 458.5,120.5 455.5,123.5 452.5,120.5" fill="#00d4ff" />
-<rect x="450" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="455.5,132.5 458.5,135.5 455.5,138.5 452.5,135.5" fill="#00d4ff" />
-<rect x="450" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="450" y="160" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="465" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="465" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="470.5,87.5 473.5,90.5 470.5,93.5 467.5,90.5" fill="#00d4ff" />
-<rect x="465" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="465" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="465" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="465" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="465" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="480" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="480" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="480" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="480" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="480" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="480" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="480" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="495" y="70" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="495" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="495" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="495" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="495" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="495" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="495" y="160" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="510" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="510" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="510" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="510" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="510" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="510" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="510" y="160" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="525" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="525" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="525" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="525" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="525" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="525" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="525" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="540" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="540" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="540" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="540" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="540" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="540" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="540" y="160" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="555" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="555" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="555" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="555" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="555" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="555" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="555" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="570" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="570" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="570" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="570" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="570" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="575.5,132.5 578.5,135.5 575.5,138.5 572.5,135.5" fill="#00d4ff" />
-<rect x="570" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="570" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="585" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="585" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="585" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="585" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="585" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="585" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="585" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="600" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="600" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="600" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="605.5,102.5 608.5,105.5 605.5,108.5 602.5,105.5" fill="#00d4ff" />
-<rect x="600" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="600" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="600" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="600" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="615" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="615" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="615" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="615" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="615" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="615" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="615" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="630" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="630" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="630" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="635.5,102.5 638.5,105.5 635.5,108.5 632.5,105.5" fill="#00d4ff" />
-<rect x="630" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="630" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="630" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="630" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="645" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="645" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="645" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="645" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="645" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="645" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="645" y="160" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="650.5,162.5 653.5,165.5 650.5,168.5 647.5,165.5" fill="#00d4ff" />
-<rect x="660" y="70" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="665.5,72.5 668.5,75.5 665.5,78.5 662.5,75.5" fill="#00d4ff" />
-<rect x="660" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="665.5,87.5 668.5,90.5 665.5,93.5 662.5,90.5" fill="#00d4ff" />
-<rect x="660" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="660" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="660" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="665.5,132.5 668.5,135.5 665.5,138.5 662.5,135.5" fill="#00d4ff" />
-<rect x="660" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="660" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="675" y="70" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="675" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="675" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="680.5,102.5 683.5,105.5 680.5,108.5 677.5,105.5" fill="#00d4ff" />
-<rect x="675" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="680.5,117.5 683.5,120.5 680.5,123.5 677.5,120.5" fill="#00d4ff" />
-<rect x="675" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="675" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="675" y="160" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="690" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="690" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="690" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="690" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="695.5,117.5 698.5,120.5 695.5,123.5 692.5,120.5" fill="#00d4ff" />
-<rect x="690" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="695.5,132.5 698.5,135.5 695.5,138.5 692.5,135.5" fill="#00d4ff" />
-<rect x="690" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="690" y="160" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="705" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="705" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="710.5,87.5 713.5,90.5 710.5,93.5 707.5,90.5" fill="#00d4ff" />
-<rect x="705" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="705" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="705" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="705" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="705" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="720" y="70" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="720" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="720" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="720" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="720" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="720" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="720" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="735" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="735" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="740.5,87.5 743.5,90.5 740.5,93.5 737.5,90.5" fill="#00d4ff" />
-<rect x="735" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="735" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="735" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="735" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="735" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="750" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="750" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="750" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="750" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="750" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="750" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="750" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="765" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="765" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="765" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="765" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="765" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="765" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="765" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="780" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="780" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="780" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="785.5,102.5 788.5,105.5 785.5,108.5 782.5,105.5" fill="#00d4ff" />
-<rect x="780" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
-<polygon points="785.5,117.5 788.5,120.5 785.5,123.5 782.5,120.5" fill="#00d4ff" />
-<rect x="780" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="780" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="780" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="795" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="795" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="795" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="795" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="795" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="795" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="795" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="810" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="810" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="810" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="810" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="810" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="810" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
-<rect x="810" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+  <rect class="cell-interactive" x="30" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="30" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="30" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="30" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="30" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="30" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="30" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="45" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="45" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="45" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="45" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="45" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="45" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="45" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="60" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="60" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.8s;" points="65.5,87.5 68.5,90.5 65.5,93.5 62.5,90.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="60" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="60" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="60" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="60" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="60" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="75" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="75" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="75" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="75" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="75" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="75" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="75" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="90" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="90" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="90" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="90" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="90" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="90" y="145" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 2.4s;" points="95.5,147.5 98.5,150.5 95.5,153.5 92.5,150.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="90" y="160" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.0s;" points="95.5,162.5 98.5,165.5 95.5,168.5 92.5,165.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="105" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="105" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="105" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="105" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="105" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="105" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="105" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="120" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="120" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="120" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="120" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 2.4s;" points="125.5,117.5 128.5,120.5 125.5,123.5 122.5,120.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="120" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.0s;" points="125.5,132.5 128.5,135.5 125.5,138.5 122.5,135.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="120" y="145" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.6s;" points="125.5,147.5 128.5,150.5 125.5,153.5 122.5,150.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="120" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="135" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="135" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="135" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="135" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="135" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="135" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="135" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="150" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="150" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="150" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="150" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="150" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="150" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="150" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="165" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="165" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="165" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="165" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="165" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="165" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="165" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="180" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="180" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="180" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="180" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="180" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="180" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="180" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="195" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="195" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="195" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="195" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="195" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="195" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="195" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="210" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="210" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="210" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="210" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="210" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="210" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="210" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="225" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="225" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 2.4s;" points="230.5,87.5 233.5,90.5 230.5,93.5 227.5,90.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="225" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.0s;" points="230.5,102.5 233.5,105.5 230.5,108.5 227.5,105.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="225" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="225" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="225" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="225" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="240" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="240" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="240" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="240" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="240" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="240" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="240" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="255" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="255" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="255" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="255" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="255" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="255" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="255" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="270" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="270" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="270" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="270" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="270" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="270" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="270" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="285" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="285" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="285" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 2.4s;" points="290.5,102.5 293.5,105.5 290.5,108.5 287.5,105.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="285" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.0s;" points="290.5,117.5 293.5,120.5 290.5,123.5 287.5,120.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="285" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="285" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="285" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="300" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="300" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="300" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="300" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="300" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="300" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="300" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="315" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="315" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="315" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="315" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="315" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="315" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="315" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="330" y="70" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.0s;" points="335.5,72.5 338.5,75.5 335.5,78.5 332.5,75.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="330" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="330" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="330" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="330" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="330" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="330" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="345" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="345" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="345" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="345" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="345" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="345" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="345" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="360" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="360" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="360" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="360" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="360" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="360" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="360" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="375" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="375" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="375" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="375" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.6s;" points="380.5,117.5 383.5,120.5 380.5,123.5 377.5,120.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="375" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="375" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="375" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="390" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="390" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="390" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="390" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="390" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="390" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="390" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="405" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="405" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="405" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="405" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="405" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="405" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="405" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="420" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="420" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="420" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="420" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="420" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="420" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="420" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="435" y="70" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="435" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="435" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="435" y="115" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="435" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="435" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="435" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="450" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="450" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="450" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="450" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.6s;" points="455.5,117.5 458.5,120.5 455.5,123.5 452.5,120.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="450" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.2s;" points="455.5,132.5 458.5,135.5 455.5,138.5 452.5,135.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="450" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="450" y="160" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="465" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="465" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.0s;" points="470.5,87.5 473.5,90.5 470.5,93.5 467.5,90.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="465" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="465" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="465" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="465" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="465" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="480" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="480" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="480" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="480" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="480" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="480" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="480" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="495" y="70" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="495" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="495" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="495" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="495" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="495" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="495" y="160" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="510" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="510" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="510" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="510" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="510" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="510" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="510" y="160" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="525" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="525" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="525" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="525" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="525" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="525" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="525" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="540" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="540" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="540" y="100" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="540" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="540" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="540" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="540" y="160" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="555" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="555" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="555" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="555" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="555" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="555" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="555" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="570" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="570" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="570" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="570" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="570" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.0s;" points="575.5,132.5 578.5,135.5 575.5,138.5 572.5,135.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="570" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="570" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="585" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="585" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="585" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="585" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="585" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="585" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="585" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="600" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="600" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="600" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.0s;" points="605.5,102.5 608.5,105.5 605.5,108.5 602.5,105.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="600" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="600" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="600" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="600" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="615" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="615" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="615" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="615" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="615" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="615" y="145" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="615" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="630" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="630" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="630" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.2s;" points="635.5,102.5 638.5,105.5 635.5,108.5 632.5,105.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="630" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="630" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="630" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="630" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="645" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="645" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="645" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="645" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="645" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="645" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="645" y="160" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.2s;" points="650.5,162.5 653.5,165.5 650.5,168.5 647.5,165.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="660" y="70" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.2s;" points="665.5,72.5 668.5,75.5 665.5,78.5 662.5,75.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="660" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.8s;" points="665.5,87.5 668.5,90.5 665.5,93.5 662.5,90.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="660" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="660" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="660" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.6s;" points="665.5,132.5 668.5,135.5 665.5,138.5 662.5,135.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="660" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="660" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="675" y="70" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="675" y="85" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="675" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.0s;" points="680.5,102.5 683.5,105.5 680.5,108.5 677.5,105.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="675" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.6s;" points="680.5,117.5 683.5,120.5 680.5,123.5 677.5,120.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="675" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="675" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="675" y="160" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="690" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="690" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="690" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="690" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.2s;" points="695.5,117.5 698.5,120.5 695.5,123.5 692.5,120.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="690" y="130" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.8s;" points="695.5,132.5 698.5,135.5 695.5,138.5 692.5,135.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="690" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="690" y="160" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="705" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="705" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 0.6s;" points="710.5,87.5 713.5,90.5 710.5,93.5 707.5,90.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="705" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="705" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="705" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="705" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="705" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="720" y="70" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="720" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="720" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="720" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="720" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="720" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="720" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="735" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="735" y="85" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.8s;" points="740.5,87.5 743.5,90.5 740.5,93.5 737.5,90.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="735" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="735" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="735" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="735" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="735" y="160" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="750" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="750" y="85" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="750" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="750" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="750" y="130" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="750" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="750" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="765" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="765" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="765" y="100" width="11" height="11" fill="#26a641" stroke="#39d353" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="765" y="115" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="765" y="130" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="765" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="765" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="780" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="780" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="780" y="100" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.2s;" points="785.5,102.5 788.5,105.5 785.5,108.5 782.5,105.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="780" y="115" width="11" height="11" fill="#39d353" stroke="#ffffff" stroke-width="1.5" rx="1.5" ry="1.5" />
+<polygon class="diamond-sparkle" style="animation-delay: 1.8s;" points="785.5,117.5 788.5,120.5 785.5,123.5 782.5,120.5" fill="#00d4ff" />
+<rect class="cell-interactive" x="780" y="130" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="780" y="145" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="780" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="795" y="70" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="795" y="85" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="795" y="100" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="795" y="115" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="795" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="795" y="145" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="795" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="810" y="70" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="810" y="85" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="810" y="100" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="810" y="115" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="810" y="130" width="11" height="11" fill="#006d32" stroke="#26a641" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="810" y="145" width="11" height="11" fill="#0e4429" stroke="#1b613b" stroke-width="1.5" rx="1.5" ry="1.5" />
+<rect class="cell-interactive" x="810" y="160" width="11" height="11" fill="#261642" stroke="#39225c" stroke-width="1.5" rx="1.5" ry="1.5" />
 
 
   <!-- RPG Progress Bar (XP) -->
@@ -517,7 +560,7 @@
   <!-- Progress Bar Container -->
   <rect x="30" y="200" width="820" height="14" fill="#11071c" stroke="#39225c" stroke-width="2" rx="3" />
   <!-- Progress Bar Fill -->
-  <rect x="33" y="203" width="600" height="8" fill="#00d4ff" rx="1.5" />
+  <rect class="xp-bar-fill" x="33" y="203" width="600" height="8" fill="#00d4ff" rx="1.5" />
 
   <!-- Footer Legend -->
   <g transform="translate(0, 5)">
@@ -531,7 +574,7 @@
     <rect x="128" y="259" width="10" height="10" fill="#006d32" stroke="#26a641" stroke-width="1" rx="1" />
     <rect x="143" y="259" width="10" height="10" fill="#26a641" stroke="#39d353" stroke-width="1" rx="1" />
     <rect x="158" y="259" width="10" height="10" fill="#39d353" stroke="#ffffff" stroke-width="1" rx="1" />
-    <polygon points="163,264 165,262 167,264 165,266" fill="#00d4ff" />
+    <polygon class="diamond-sparkle" points="163,264 165,262 167,264 165,266" fill="#00d4ff" />
 
     <text x="180" y="269" class="font-pixel" font-size="9" fill="#a090b0">INTENSITY</text>
   </g>
@@ -539,7 +582,7 @@
   <!-- Right Footer Statistics -->
   <g transform="translate(0, 5)">
     <!-- Diamond Rank Indicator -->
-    <polygon points="568,261 573,254 578,261 573,268" fill="#00d4ff" />
+    <polygon class="arcade-blink" points="568,261 573,254 578,261 573,268" fill="#00d4ff" />
     <text x="586" y="265" class="font-pixel" font-size="11" fill="#00d4ff" letter-spacing="0.5">ELITE RADIANCE</text>
     
     <!-- Total Contributions -->

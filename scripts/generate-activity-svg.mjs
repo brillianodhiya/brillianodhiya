@@ -86,13 +86,14 @@ async function run() {
           }
         }
 
-        gridHtml += `<rect x="${x}" y="${y}" width="11" height="11" fill="${fill}" stroke="${stroke}" stroke-width="1.5" rx="1.5" ry="1.5" />\n`;
+        gridHtml += `<rect class="cell-interactive" x="${x}" y="${y}" width="11" height="11" fill="${fill}" stroke="${stroke}" stroke-width="1.5" rx="1.5" ry="1.5" />\n`;
         
         if (hasDiamond) {
           // Tiny diamond inside the square
           const dx = x + 5.5;
           const dy = y + 5.5;
-          gridHtml += `<polygon points="${dx},${dy-3} ${dx+3},${dy} ${dx},${dy+3} ${dx-3},${dy}" fill="#00d4ff" />\n`;
+          const delay = ((w + d) % 5) * 0.6;
+          gridHtml += `<polygon class="diamond-sparkle" style="animation-delay: ${delay.toFixed(1)}s;" points="${dx},${dy-3} ${dx+3},${dy} ${dx},${dy+3} ${dx-3},${dy}" fill="#00d4ff" />\n`;
         }
       }
     }
@@ -125,6 +126,49 @@ async function run() {
     }
     .scanlines {
       opacity: 0.04;
+      animation: crt-flicker 0.15s infinite;
+    }
+    .xp-bar-fill {
+      animation: xp-pulse 2.5s infinite ease-in-out;
+    }
+    .diamond-sparkle {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: diamond-twinkle 3s infinite ease-in-out;
+    }
+    .cell-interactive {
+      transform-box: fill-box;
+      transform-origin: center;
+      transition: all 0.25s ease-in-out;
+    }
+    .cell-interactive:hover {
+      transform: scale(1.3);
+      filter: brightness(1.4) saturate(1.2);
+      stroke: #00d4ff !important;
+      stroke-width: 2px !important;
+    }
+    .arcade-blink {
+      animation: text-blink 1.2s infinite;
+    }
+
+    @keyframes crt-flicker {
+      0% { opacity: 0.02; }
+      50% { opacity: 0.05; }
+      100% { opacity: 0.02; }
+    }
+    @keyframes xp-pulse {
+      0% { opacity: 0.85; fill: #00a3c4; }
+      50% { opacity: 1; fill: #00d4ff; }
+      100% { opacity: 0.85; fill: #00a3c4; }
+    }
+    @keyframes diamond-twinkle {
+      0% { transform: scale(0.9); opacity: 0.4; fill: #00d4ff; }
+      50% { transform: scale(1.3); opacity: 1; fill: #ffffff; }
+      100% { transform: scale(0.9); opacity: 0.4; fill: #00d4ff; }
+    }
+    @keyframes text-blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0.2; }
     }
   </style>
 
@@ -150,7 +194,7 @@ async function run() {
   <!-- Progress Bar Container -->
   <rect x="30" y="200" width="820" height="14" fill="#11071c" stroke="#39225c" stroke-width="2" rx="3" />
   <!-- Progress Bar Fill -->
-  <rect x="33" y="203" width="${Math.max(4, progressBarFillWidth - 6)}" height="8" fill="#00d4ff" rx="1.5" />
+  <rect class="xp-bar-fill" x="33" y="203" width="${Math.max(4, progressBarFillWidth - 6)}" height="8" fill="#00d4ff" rx="1.5" />
 
   <!-- Footer Legend -->
   <g transform="translate(0, 5)">
@@ -164,7 +208,7 @@ async function run() {
     <rect x="128" y="259" width="10" height="10" fill="#006d32" stroke="#26a641" stroke-width="1" rx="1" />
     <rect x="143" y="259" width="10" height="10" fill="#26a641" stroke="#39d353" stroke-width="1" rx="1" />
     <rect x="158" y="259" width="10" height="10" fill="#39d353" stroke="#ffffff" stroke-width="1" rx="1" />
-    <polygon points="163,264 165,262 167,264 165,266" fill="#00d4ff" />
+    <polygon class="diamond-sparkle" points="163,264 165,262 167,264 165,266" fill="#00d4ff" />
 
     <text x="180" y="269" class="font-pixel" font-size="9" fill="#a090b0">INTENSITY</text>
   </g>
@@ -172,7 +216,7 @@ async function run() {
   <!-- Right Footer Statistics -->
   <g transform="translate(0, 5)">
     <!-- Diamond Rank Indicator -->
-    <polygon points="568,261 573,254 578,261 573,268" fill="#00d4ff" />
+    <polygon class="arcade-blink" points="568,261 573,254 578,261 573,268" fill="#00d4ff" />
     <text x="586" y="265" class="font-pixel" font-size="11" fill="#00d4ff" letter-spacing="0.5">ELITE RADIANCE</text>
     
     <!-- Total Contributions -->
