@@ -2,9 +2,6 @@
 
 # 🎮 Brilliano Dhiya Ulhaq (Kanrishaurus)
 ### Technical Project Lead & Senior Frontend Developer
-
-<img src="https://raw.githubusercontent.com/brillianodhiya/Brilliano-8bit-Portofolio/main/attached_assets/banner.png" width="100%" alt="Retro Gaming Banner" style="border-radius: 8px; border: 4px solid #fff; box-shadow: 4px 4px 0px 0px #000;" />
-
 ---
 
 <a href="https://brilli.is-a.dev/" target="_blank">
