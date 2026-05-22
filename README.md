@@ -147,7 +147,7 @@ I built an interactive retro arcade cabinet directly into my website! You can pl
       <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=brillianodhiya&theme=dracula" height="160" alt="GitHub Stats" />
     </td>
     <td align="center">
-      <img src="https://streak-stats.demolab.com/?user=brillianodhiya&theme=dracula" height="160" alt="GitHub Streak" />
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=brillianodhiya&theme=dracula" height="160" alt="GitHub Productive Time" />
     </td>
   </tr>
 </table>
