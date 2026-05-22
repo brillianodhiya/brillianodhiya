@@ -123,7 +123,7 @@ I built an interactive retro arcade cabinet directly into my website! You can pl
 
 ---
 
-## 📊 Live Game Stats (GitHub Contributions)
+## 📊 Live Game Stats (GitHub & GitLab Contributions)
 
 <div align="center">
 
