@@ -141,20 +141,9 @@ I built an interactive retro arcade cabinet directly into my website! You can pl
 
 <div align="center">
 
-<table border="0">
-  <tr>
-    <td align="center">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=brillianodhiya&theme=dracula" height="160" alt="GitHub Stats" />
-    </td>
-    <td align="center">
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=brillianodhiya&theme=dracula" height="160" alt="GitHub Productive Time" />
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<img src="https://raw.githubusercontent.com/brillianodhiya/brillianodhiya/output/snake.svg" alt="Snake Contribution Game" width="100%" />
+<a href="https://brilli.is-a.dev/activity" target="_blank">
+  <img src="https://raw.githubusercontent.com/brillianodhiya/brillianodhiya/output/activity_log.svg" alt="Activity Log Game Grid" width="100%" />
+</a>
 
 </div>
 

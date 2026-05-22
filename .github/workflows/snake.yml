@@ -18,13 +18,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Generate Activity Log SVG
+        run: node scripts/generate-activity-svg.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: generate snake.svg
         uses: Platane/snk/svg-only@latest  # Menggunakan versi terbaru
         with:
           github_user_name: brillianodhiya  # Ganti dengan username GitHub Anda
           outputs: dist/snake.svg
 
-      - name: push snake.svg to the output branch
+      - name: push generated files to the output branch
         uses: crazy-max/ghaction-github-pages@v2.6.0
         with:
           target_branch: output
