@@ -126,10 +126,10 @@ I built an interactive retro arcade cabinet directly into my website! You can pl
 <table border="0">
   <tr>
     <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=brillianodhiya&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="160" alt="GitHub Stats" />
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=brillianodhiya&theme=dracula" height="160" alt="GitHub Stats" />
     </td>
     <td align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=brillianodhiya&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="160" alt="Top Languages" />
+      <img src="https://streak-stats.demolab.com/?user=brillianodhiya&theme=dracula" height="160" alt="GitHub Streak" />
     </td>
   </tr>
 </table>
