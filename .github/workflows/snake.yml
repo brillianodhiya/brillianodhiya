@@ -29,7 +29,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: generate snake.svg
-        uses: Platane/snk/svg-only@latest  # Menggunakan versi terbaru
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: brillianodhiya  # Ganti dengan username GitHub Anda
           outputs: dist/snake.svg
